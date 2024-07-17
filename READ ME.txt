@@ -1,0 +1,8 @@
+This a guide on how to run the jupyter notebook.
+
+This notebook will set up the Cloud environment in order to process the right operation. To do so it'll have to use the AWS CLI.
+So, you'll need to have updated credentials. 
+
+Moreover, the notebook will also have to send updated files to the master instance as well as the processing nodes. So, you'll need to have the files 'master.py', 'worker.py' and 'labsuser.pem' in the same folder as the notebook.
+Also, because all the instances will have to use boto3 which rely on AWS CLI and so need the .aws folder to work. 
+So, you'll also need to make sure that the .aws folder in the same folder as this notebook is also updated with the latest credentials otherwise the master instance and the processing nodes won't be able to compute the oepration.
